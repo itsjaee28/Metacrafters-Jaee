@@ -9,25 +9,45 @@ Assessment Requirements
 */
 
 // create a variable to hold your NFT's
-
+const NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT () {
-
+function mintNFT (_name, _eyecolor, _shirtType, _bling) {
+   const NFT = {
+      "name": _name,
+      "eyecolor": _eyecolor,
+      "shirtType":_shirtType,
+      "bling": _bling
+   }
+   NFTs.push(NFT);
+   console.log("Minted: "+_name);
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-
+   for(let i = 0; i<NFTs.length; i++){
+      console.log(NFTs[i]);
+   }
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
+   console.log(NFTs.length);
 
 }
 
 // call your functions below this line
-
-
+mintNFT("Jaee", "Black", "Baggy Shirt", "Leather strap Watch");
+mintNFT("Pat", "Grey", "Dryfit Shirt", "Tennis Bracelets");
+mintNFT("Gekko", "Green", "Vest", "Drop Earrings");
+mintNFT("Reyna", "Purple", "Sleeveless Top", "Gold Ring");
+mintNFT("Skye", "Yellow Green", "Tank Top", "Diamond Pendant");
+mintNFT("Iso", "Blue", "Jacket", "Cuban Link Chains");
+mintNFT("Sage", "Black", "Robe", "Stackable Ring");
+mintNFT("Killjoy", "Yellow", "Cropped Jacket", "Silver Watch");
+mintNFT("Phoenix", "Red", "Athletic Jacket", "Gold Chain Necklace");
+mintNFT("Raze", "Brown", "Crop Top", "Charm Bracelets");
+listNFTs();
+getTotalSupply();
