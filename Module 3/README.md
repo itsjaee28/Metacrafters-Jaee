@@ -36,9 +36,9 @@ To deploy and run the contract, follow these steps:
 ```
 
 4. After deploying, you can interact with the following contract functions:
-- Mint tokens: Allows the owner to mint new tokens to a specified address.
-- Burn tokens: Allows the owner to burn tokens from a specified address.
-- Transfer tokens: Allows token transfers between addresses.
+- require(): Ensures the deposit amount is positive.
+- revert(): Stops the transaction if the withdrawal amount is greater than the balance.
+- assert(): Verifies that the balance cannot be negative after a withdrawal, which serves as a final check to maintain contract integrity.
 
 ### Help
 Common issues might include:
