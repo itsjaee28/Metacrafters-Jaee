@@ -1,10 +1,10 @@
 # Error Handling in Transaction of Tokens
 
-This Solidity smart contract, named `MyToken`, implements a simple token system with features for minting, burning, and transferring tokens. It showcases error-handling mechanisms using `require`, `assert`, and `revert` statements.
+This Solidity project demonstrates various error-handling mechanisms for managing token transactions. It includes examples of using require(), assert(), and revert() to validate transaction conditions and enforce safe execution of token operations. The contract is designed to prevent invalid operations, such as transferring insufficient funds or dividing by zero, ensuring robust error handling in blockchain applications.
 
 ## Description
 
-The `MyToken` contract is designed to demonstrate the fundamentals of a token system while implementing robust error handling. The contract includes functionality for minting new tokens, burning tokens, and transferring tokens between users. It also makes use of Solidity's error-handling mechanisms (`require`, `assert`, and `revert`) to ensure safe and reliable transactions. The contract supports ownership control, allowing only the owner to mint and burn tokens, and implements custom error messages for clear debugging.
+This Solidity project demonstrates various error-handling mechanisms for managing token transactions. It includes examples of using require(), assert(), and revert() to validate transaction conditions and enforce safe execution of token operations. The contract is designed to prevent invalid operations, such as transferring insufficient funds or dividing by zero, ensuring robust error handling in blockchain applications.
 
 ## Getting Started
 
