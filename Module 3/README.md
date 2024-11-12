@@ -1,4 +1,4 @@
-# Error Handling in Transaction of Tokens
+# Error Handling in Deposit and Withdrawal of Funds
 
 This Solidity project demonstrates various error-handling mechanisms for managing token transactions. It includes examples of using require(), assert(), and revert() to validate transaction conditions and enforce safe execution of token operations. The contract is designed to prevent invalid operations, such as transferring insufficient funds or dividing by zero, ensuring robust error handling in blockchain applications.
 
